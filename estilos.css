@@ -1,0 +1,44 @@
+body {
+    background: #f1f1f1;
+}
+
+.btn-whatsapp {
+    position: absolute;
+    outline: none;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    cursor: pointer;
+    background: #34af23;
+    color: #FFF;
+    font-size: 2.3rem;
+    border: 1px solid #f1f1f1;
+
+    /* animation-name: pulsar;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;  */
+
+    animation: pulsar 0.8s ease-out 1s infinite alternate none running;
+}
+
+a {
+    color: inherit;
+}
+
+@keyframes pulsar {
+    0% {
+        height: 65px;
+        width: 65px;
+    }
+    100% {
+        height: 85px;
+        width: 85px;
+    }
+}
